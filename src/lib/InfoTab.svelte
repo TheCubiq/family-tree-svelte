@@ -1,16 +1,11 @@
 <script>
-    import { infoData } from "./stores.js";
+    import { fly } from "svelte/transition";
 
-    import { fade, fly, slide } from "svelte/transition";
-
-    export let name = "";
     export let id = "";
+    export let name = "No name";
     export let parent = "No parent";
-    export let description;
     export let birth = "No birth";
-
-    const defaultInfo =
-        "Ačkoli v současné době je příjmení rodu ustáleno na podobě „Lajsek“, až do druhé poloviny 19. století se v matrikách objevovaly jeho různé varianty jako Laisek, Laysek, Lejsek, Leisek, či Leysek, a to v závislosti na zapisovateli nebo na tom jak a kdo údaje do zápisu diktoval, nebo jak to vyplývalo ze starších písemných dokumentů. Proto jsou zde uvedeny varianty příjmení tak, jak byly u jednotlivých osob zapsány, u novorozenců pak podle varianty příjmení jejich otce, která byla zrovna tehdy zapsána. Proto není nijak výjimečné, že se sourozenci ve variantě příjmení mezi sebou mohou lišit. V některých případech lze pak pozorovat, jak se v té či oné větvi rodiny ta která varianta začala ustalovat. Rod byl od 17. až do poloviny 20. století usídlený v poměrně malé oblasti jihozápadně od Kutné Hory (Suchdol, Dobřeň, Roztěž, Malešov, Křesetice a Rápošov).";
+    export let description = "No description";
 
     const toSafeValue = (value, defaultValue) => {
         return value ? value : defaultValue;
@@ -22,31 +17,18 @@
     };
 </script>
 
-{#if name == ""}
-    <div class="sticky">
-        {#key value}
-            <!-- <div transition:fade>{value}</div> -->
-            <h1>Rodokmen Rodu Lajsků</h1>
-        {/key}
+{#key id}
+    <div in:fly={{ x: -50 }} class="sticky">
+        <h1>{name}</h1>
+        <h2>*{birth}</h2>
     </div>
-    <div>
-        <p>{defaultInfo}</p>
-    </div>
-{:else}
-    {#key id}
-        <div 
-            in:fly={{ x: -50 }}
-            class="sticky">
-            <h1>{name}</h1>
-            <h2>*{birth}</h2>
-        </div>
-    {/key}
-    <div>
-        {#each toSafeDescription(description) as paragraph}
-            <p>{paragraph}</p>
-        {/each}
-    </div>
-{/if}
+{/key}
+<div>
+    
+    {#each toSafeDescription(description) as paragraph}
+        <p>{paragraph}</p>
+    {/each}
+</div>
 
 <style>
     div {
@@ -87,7 +69,7 @@
 
     p {
         margin: 0;
-        padding: .5em 0;
+        padding: 0.5em 0;
         font-size: 1.2em;
         text-align: start;
     }

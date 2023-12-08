@@ -25,7 +25,11 @@
 
     <footer>
         <a href="https://cubiq.dev">
-            coded with 🤍 by Cubiq
+            coded with 🤍 by Jakub Lajsek
+            <!-- coded with 🤍 by Cubiq -->
+        </a>
+        <a href="https://github.com/TheCubiq/family-tree-svelte">
+            zdrojový kód zde
         </a>
     </footer>
 </main>
@@ -45,5 +49,7 @@
         margin-bottom: 2em;
         /* font-size: 0.8em; */
         color: var(--color-text);
+        display: flex;
+        flex-direction: column;
     }
 </style>
