@@ -6,10 +6,12 @@
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "npx gh-pages -d dist -b build"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^3.0.0",
+    "gh-pages": "^6.1.0",
     "svelte": "^4.2.3",
     "vite": "^5.0.0"
   }
