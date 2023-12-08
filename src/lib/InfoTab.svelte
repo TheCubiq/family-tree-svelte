@@ -18,16 +18,13 @@
     };
 
     const toDateSafeFormatted = (dateData) => {
-        // ideally returning ex. "*1. 1. 2000 - †1. 1. 2000"
-        // if there's no death date, then return ex. "*1. 1. 2000"
-        
         let str = "";
 
         const { birth, death, place } = dateData;
 
         str += birth ? "*" + birth : "";
-        str += place ? " (" + place + ")" : "";
-        str += death ? " - † " + death : "";
+        str += place ? ` (${place})` : "";
+        str += death ? " - †" + death : "";
         
         // if there's also place
 

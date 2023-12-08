@@ -574,8 +574,8 @@ export const treeDataRaw = [
         id: "9O2",
         parent: "8AU",
         birth: "30.5.1930",
-        death: "30.7.2017",
-        place: "Křesetice č. p. 147",
+        death: "30.7.2017 (Křesetice)",
+        place: "Křesetice",
         description: [
             "manžel Jaroslav Štěpánek (*9.8.1931 Strašnice - 9.2.2007 Křesetice č.p. 147)",
         ]
