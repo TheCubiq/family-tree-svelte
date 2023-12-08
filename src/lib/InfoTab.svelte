@@ -3,7 +3,6 @@
 
     export let id = "";
     export let name = "No name";
-    export let parent = "No parent";
     export let birth = "No birth";
     export let description = "No description";
 
