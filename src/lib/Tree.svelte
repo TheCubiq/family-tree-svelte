@@ -19,7 +19,6 @@
         position: relative;
         overflow: scroll;
         -webkit-overflow-scrolling: touch;
-        
-        padding: 5rem;
+        padding: 2rem;
     }
 </style>

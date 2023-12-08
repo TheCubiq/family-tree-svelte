@@ -8,7 +8,8 @@ export const toTreeData = (data, parentId = undefined) => {
             const children = toTreeData(data, item.id);
             // const node = { name: item.name, id: item.id };
             // get all but item.parent
-            const { parent, ...node } = item;
+            // const { parent, ...node } = item;
+            const node = { ...item };
 
             if (children.length > 0) {
                 node.children = children;

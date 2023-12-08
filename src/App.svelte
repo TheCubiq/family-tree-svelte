@@ -1,21 +1,33 @@
 <script>
     import InfoTab from "./lib/InfoTab.svelte";
     import Tree from "./lib/Tree.svelte";
-    import { treeData } from "./lib/stores";
+    import { infoData, treeData } from "./lib/stores";
 
     import { treeDataRaw } from "./lib/treeData.js";
     import { toTreeData } from "./lib/utils";
 
     treeData.set(toTreeData(treeDataRaw));
 
+    let tab;
+    
+    infoData.subscribe(value => {
+        tab = value;
+    });
+
 </script>
 
 <main>
-    <InfoTab/>
-
-    <h1>spreading eepy vibes</h1>
-
+    
+    <!-- <h1>Rodokmen rodu Lajsků</h1> -->
+    
     <Tree treeData={$treeData} />
+    <InfoTab {...tab}/>
+
+    <footer>
+        <a href="https://cubiq.dev">
+            coded with 🤍 by Cubiq
+        </a>
+    </footer>
 </main>
 
 <style>
@@ -23,5 +35,15 @@
         position: relative;
         
         width: 100svw;
+    }
+
+    footer {
+        /* position: absolute; */
+        /* bottom: 0; */
+        /* right: 0; */
+        padding: 1em;
+        margin-bottom: 2em;
+        /* font-size: 0.8em; */
+        color: var(--color-text);
     }
 </style>
