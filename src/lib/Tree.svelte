@@ -17,7 +17,7 @@
 <style>
     :global(.treeRoot) {
         position: relative;
-        overflow: scroll;
+        overflow-x: scroll;
         -webkit-overflow-scrolling: touch;
         padding: 2rem;
     }

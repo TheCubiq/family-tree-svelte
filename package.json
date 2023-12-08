@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host",
-    "build": "vite build",
+    "prebuild": "vite build",
     "preview": "vite preview",
     "deploy": "npx gh-pages -d dist -b build"
   },

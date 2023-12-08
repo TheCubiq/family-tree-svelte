@@ -479,7 +479,13 @@ export const treeDataRaw = [
         id: "8AU",
         parent: "7K",
         birth: "7.8.1890",
+        death: "1951",
+
         place: "Křesetice č. p. 109",
+
+        description: [
+            "manželka: Anna Marie Rolletschek (*8.3.1894, Tandorf, - 28.10.1968 Křesetice č. p. 147)",
+        ]
     },
     {
         name: "Anna Lajsková",
@@ -528,7 +534,59 @@ export const treeDataRaw = [
             "Sklenářský dělník v Křeseticích č. p. 71 a poté č. p. 122. Dne 20. 1. 1924 se v chrámu sv. Bartoloměje v Kutné Hoře oženil s Johannou Markovou (2. 6. 1896 Křesetice č. p. 122 – 9. 10. 1959), dcerou Františka Marka (*26. 10. 1856), dělníka v Křeseticích č. p. 122, a Marie Pospíšilové (*18. 2. 1852) z Malešova.",
         ]
     },
+
     // devátá generace
+
+
+    {
+        name: "Augustin Lajsek",
+        id: "9A",
+        parent: "8AU",
+        birth: "19.8.1919",
+        death: "10.5.1945 (Kutná Hora)",
+        place: "Mstišov",
+
+    },
+    {
+        name: "Antonín Lajsek",
+        id: "9A2",
+        parent: "8AU",
+        birth: "1925",
+        place: "Mstišov",
+        death: "1951 (Kutná Hora)",
+    },
+    {
+        name: "Alfred Lajsek",
+        id: "9A3",
+        parent: "8AU",
+        birth: "21.11.1916",
+        death: "4.11.1993 (Kutná Hora)",
+        place: "Mstišov",
+        description: [
+            "Manželka Anna Řezáčová Lajsková (*22.8.1919 Petrovice u Kutné Hory)",
+            "Rodiče Anny Lajskové:",
+            "Josef Řezáč - Dělník v Petrovicích u Kutné Hory",
+            "Anna Navrátilová Řezáčová ",
+        ]
+    },
+    {
+        name: "Otýlie Lajsková Štěpánková",
+        id: "9O2",
+        parent: "8AU",
+        birth: "30.5.1930",
+        death: "30.7.2017",
+        place: "Křesetice č. p. 147",
+        description: [
+            "manžel Jaroslav Štěpánek (*9.8.1931 Strašnice - 9.2.2007 Křesetice č.p. 147)",
+        ]
+    },
+    
+
+
+
+
+
+
     {
         name: "Oldřich Alois Laisek",
         id: "9O",
@@ -543,6 +601,51 @@ export const treeDataRaw = [
         ]
     },
     // desátá generace
+
+
+    {
+        name: "Jarmila Lajsková Šibravová",
+        id: "10JL",
+        parent: "9A3",
+        birth: "8.6.1944",
+        place: "Kutná Hora",
+        mother: "Anna Řezáčová Lajsková",
+        description: [
+            "Manžel František Šibrava (*26.12.1938)",
+        ]
+    },
+
+    {
+        name: "Jiří Lajsek",
+        id: "10J2",
+        parent: "9A3",
+        birth: "24.2.1947",
+        death: "14.2.2010 (Kutná Hora)",
+        place: "Kutná Hora",
+        mother: "Anna Řezáčová Lajsková",
+        description: [
+            "Manželka Lubomíra Bláhová Lajsková (*7.6.1951 Kaňk - 10.3.2021 Kutná Hora)",
+            "rodiče Lubomíry Lajskové:",
+            "Miloslav Bláha (15.3.1922 Větrný Jeníkov – 23.5.1993 Kaňk)",
+            "Lubomíra Kvapilová Bláhová (25.1.1929 Horní Moštěnice – 18.10.1992 Kutná Hora))",
+        ]
+    },
+
+    {
+        name: "Jaroslav Štěpánek",
+        id: "10J3",
+        parent: "9O2",
+        birth: "13.10.1961",
+        place: "Praha",
+    },
+    {
+        name: "Jana Štěpánková",
+        id: "10J4",
+        parent: "9O2",
+        birth: "26.9.1967",
+        place: "Kutná Hora",
+    },
+
     {
         name: "Jan Lajsek",
         id: "10J",
@@ -558,6 +661,54 @@ export const treeDataRaw = [
         ]
     },
     // jedenáctá generace
+
+    {
+        name: "Lenka Šibravová Klazarová",
+        id: "11L",
+        parent: "10JL",
+        birth: "13.11.1966",
+        place: "Kutná Hora",
+        description: [
+            "Manžel: Ondřej Kazar (13.12.1966 Hradec Králové)",
+        ]
+    },
+
+    {
+        name: "Markéta Šibravová Suchánková",
+        id: "11M",
+        parent: "10JL",
+        birth: "3.1.1976",
+        place: "Kutná Hora",
+        description: [
+            "Manžel: Martin Suchánek (*24.8.1974)",
+        ]
+    },
+
+    {
+        name: "Lucie Lajsková Filipová",
+        id: "11L2",
+        parent: "10J2",
+        birth: "23.3.1971",
+        place: "Kutná Hora",
+        description: [
+            "Manžel: Aleš Filip (*28.4.1966 Kutná Hora)",
+        ]
+    },
+
+    {
+        name: "Stanislav Lajsek",
+        id: "11S",
+        parent: "10J2",
+        birth: "25.5.1975",
+        place: "Kutná Hora",
+        description: [
+            "Manželka: Markéta Loumová (*11.12.1975 Kutná Hora)",
+            "Rodiče Markéty Loumové:",
+            "Miroslav Louma (*Liberec)",
+            "Hana Kaiserschatová Loumová (*Kutná Hora)",
+        ]
+    },
+
     {
         name: "Vladimír Lajsek",
         id: "11V",
@@ -576,5 +727,68 @@ export const treeDataRaw = [
         id: "11P",
         parent: "10J",
         birth: "1991",
-    }
+    },
+
+    // dvanáctá generace
+
+    {
+        name: "Filip Klazar",
+        id: "12F",
+        parent: "11L",
+        birth: "11.1.1992",
+        place: "Kutná Hora",
+    },
+    {
+        name: "Šimon Klazar",
+        id: "12S",
+        parent: "11L",
+        birth: "2.4.2000",
+        place: "Kutná Hora",
+    },
+    {
+        name: "Matěj Suchánek",
+        id: "12M",
+        parent: "11M",
+        birth: "7.8.2003",
+        place: "Kutná Hora",
+    },
+    {
+        name: "Michaela Immanuela Filipová",
+        id: "12M2",
+        parent: "11L2",
+        birth: "13.5.2004",
+        place: "Kolín",
+    },
+    {
+        name: "Kateřina Filipová",
+        id: "12K",
+        parent: "11L2",
+        birth: "26.9.2011",
+        place: "Kolín",
+    },
+    {
+        name: "Jakub Lajsek",
+        id: "12J",
+        parent: "11S",
+        birth: "7.7.2004",
+        place: "Kolín",
+        description: [
+            "Naprogramoval tuto stránku :)",
+        ]
+    },
+    {
+        name: "Štěpán Lajsek",
+        id: "12S2",
+        parent: "11S",
+        birth: "30.6.2009",
+        place: "Kolín",
+    },
+    {
+        name: "Vilém Lajsek",
+        id: "12V",
+        parent: "11S",
+        birth: "5.4.2012",
+        place: "Kolín",
+    },
+
 ];

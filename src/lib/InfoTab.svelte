@@ -5,8 +5,10 @@
     export let name = "No name";
     export let birth = "No birth";
     export let description = "No description";
+    export let death = "";
+    export let place = "";
 
-    const toSafeValue = (value, defaultValue) => {
+    const toSafeValue = (value, defaultValue = "") => {
         return value ? value : defaultValue;
     };
 
@@ -14,12 +16,31 @@
         const safeDesc = toSafeValue(desc, "žádné další informace");
         return typeof safeDesc === "string" ? [safeDesc] : safeDesc;
     };
+
+    const toDateSafeFormatted = (dateData) => {
+        // ideally returning ex. "*1. 1. 2000 - †1. 1. 2000"
+        // if there's no death date, then return ex. "*1. 1. 2000"
+        
+        let str = "";
+
+        const { birth, death, place } = dateData;
+
+        str += birth ? "*" + birth : "";
+        str += place ? " (" + place + ")" : "";
+        str += death ? " - † " + death : "";
+        
+        // if there's also place
+
+        return str;
+    };
+
+
 </script>
 
 {#key id}
     <div in:fly={{ x: -50 }} class="sticky">
         <h1>{name}</h1>
-        <h2>*{birth}</h2>
+        <h2>{toDateSafeFormatted({ birth, death, place})}</h2>
     </div>
 {/key}
 <div>
