@@ -44,6 +44,9 @@ h1 {
   padding: 0;
   margin: 0;
   text-align: center;
+
+  /* scrollbar fix */
+  max-width: calc(100svw - (100svw - 100%)); 
 }
 
 a {

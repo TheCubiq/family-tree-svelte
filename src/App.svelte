@@ -37,8 +37,6 @@
 <style>
     main {
         position: relative;
-        
-        width: 100svw;
     }
 
     footer {
