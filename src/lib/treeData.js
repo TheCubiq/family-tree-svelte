@@ -528,6 +528,9 @@ export const treeDataRaw = [
         parent: "7K",
         birth: "28.9.1897",
         place: "Křesetice č. p. 109",
+        description: [
+            "manželka: Anežka Linhartová Lajsková",
+        ]
     },
     {
         name: "Alois Lajsek",
@@ -590,14 +593,21 @@ export const treeDataRaw = [
         ]
     },
     
-
-
-
-
+    {
+        name: "Zdeněk Lajsek",
+        id: "9Z",
+        parent: "8V2",
+        birth: "20.4.1922",
+        place: "Křesetice",
+        description: [
+            "manželka: Marie Křenková Lajsková (*13.1.1923 Křesetice)",
+            "Rodiče Marie Lajskové: Karel Křenek a Antonie Čermáková Křenková",
+        ],
+    },
 
 
     {
-        name: "Oldřich Alois Laisek",
+        name: "Oldřich Alois Lajsek",
         id: "9O",
         parent: "8A2",
         birth: "8.2.1925",
@@ -739,6 +749,18 @@ export const treeDataRaw = [
         birth: "?",
     },
 
+    {
+        name: "Zbyněk Lajsek",
+        id: "10Z",
+        parent: "9Z",
+        birth: "6.4.1953",
+        place: "Kutná Hora",
+        description: [
+            "Manželka: Miluše Hatáková Lajsková",
+            "Rodiče Miluše: Josef Haták (*17.1.1918 Praha) a Blažena Holadová Hatáková (*6.3.1921 Keblov)",
+        ],
+    },
+
     // jedenáctá generace
 
     {
@@ -865,6 +887,29 @@ export const treeDataRaw = [
         id: "11XS3",
         parent: "10J3",
         birth: "?",
+    },
+
+    {
+        name:"Monika Lajsková",
+        id:"11M2",
+        parent:"10Z",
+        birth:"14.3.1976",
+        place:"Kutná Hora",
+    },
+
+    {
+        name:"Zbyněk Lajsek",
+        id:"11Z",
+        parent:"10Z",
+        birth:"28.11.1979",
+        place:"Kutná Hora",
+    },
+
+    {
+        name:"? Lajsková",
+        id:"11X3",
+        parent:"10Z",
+        birth:"?",
     },
 
 
