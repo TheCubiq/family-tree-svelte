@@ -389,6 +389,10 @@ export const treeDataRaw = [
         parent: "6B",
         birth: "12.2.1864",
         place: "Rápošov č. p. 14",
+        description: [
+            "Kamnář a domkař",
+            "Dne 21.11.1888 se v Rápošově oženil s Annou Meistříkovou Laiskovou",
+        ]
     },
     {
         name: "Antonín Laisek",
@@ -433,7 +437,9 @@ export const treeDataRaw = [
         id: "8JJ",
         parent: "7JL",
         birth: "8.5.1887",
+        place: "Rápošov č. p. 13",
         description: [
+            "manželka: Pavlína Zoubková Laisková",
             "Vrchní posunovač c. k. státních drah v Praze VIII č. p. 829. Dne 11. 5. 1912 se v Praze v Chrámu Matky Boží před Týnem oženil s Pavlínou Zoubkovou (* 19. 4. 1887 Volšany č. p. 14), služebnou z Prahy I č. p. 24, dcerou Václava Zoubka, rolníka ve Volšanech č. p. 14, a Marie Marešové ze Stražovic č. p. 21 (AHMP, Matrika oddaných kostela Matky Boží před Týnem, 1911 – 1920, list 28, dig. list 31)."
         ]
     },
@@ -563,7 +569,7 @@ export const treeDataRaw = [
         death: "4.11.1993 (Kutná Hora)",
         place: "Mstišov",
         description: [
-            "Manželka Anna Řezáčová Lajsková (*22.8.1919 Petrovice u Kutné Hory)",
+            "Manželka Anna Řezáčová Lajsková (*22.8.1919 Petrovice u Kutné Hory - 24.4.1992)",
             "Rodiče Anny Lajskové:",
             "Josef Řezáč - Dělník v Petrovicích u Kutné Hory",
             "Anna Navrátilová Řezáčová ",
@@ -599,6 +605,32 @@ export const treeDataRaw = [
             "Malíř, designér, grafik a pedagog.",
             "Dne 14. 7. 1951 se na Národním výboru v Praze I oženil s Emilií Veselou (17. 5. 1934 Praha – 2016) z Prahy XX č. p. 1515, dcerou Josefa Veselého (5. 3. 1897 Bratřice – 4. 7. 1971), dělníka, a Emilie Procházkové (2. 10. 1902 Vestec – 12. 10. 1977), vedoucí prodejny.",
         ]
+    },
+
+    {
+        name: "Josef Laisek",
+        id: "9J",
+        parent: "8JJ",
+        birth: "5.8,1914",
+        place: "Praha Libeň č. p. 829",
+        death: "4.9.1993",
+        description: [
+            "strojní zámečník, projektant, údržbář",
+            "Manželka: Anna Hálková Laisková (* 18. 9. 1913)",
+            "Měl minimálně 2 potomky"
+        ]
+    },
+
+    
+    {
+        name: "Květoslav Lajsek",
+        id: "9K",
+        parent: "8K",
+        birth: "8.6.1925",
+        place: "Bykánec",
+        death: "16.2.1997 (Kutná Hora)",
+
+        
     },
     // desátá generace
 
@@ -660,6 +692,42 @@ export const treeDataRaw = [
             "Oženil se s Lenkou Brabcovou/Luxovou (*2. 1. 1962 Chlumec nad Cidlinou č. p. 165-III), dcerou Otakara Brabce (6. 7. 1938 Spišská Belá, okr. Poprad, Slovensko – 2010), technického úředníka, a Alenky Luxové rozené Zelenkové (*29. 1. 1939 Nový Bydžov-Chudonice), a mají spolu syny:",
         ]
     },
+
+    {
+        name: "Květoslava Lajsková",
+        id: "10K",
+        parent: "9K",
+        birth: "1950",
+    },
+    {
+        name: "Karel Lajsek",
+        id: "10K2",
+        parent: "9K",
+        birth: "1952",
+        death: "2014",
+    },
+    {
+        name: "Jan Lajsek",
+        id: "10J5",
+        parent: "9K",
+        birth: "1955",
+        description: [
+            "Manželka: Jaroslava Lajsková (*1957 Březová, Kutná Hora)",
+        ]
+    },
+    {
+        name: "... Laisek",
+        id: "10X",
+        parent: "9J",
+        birth: "?",
+    },
+    {
+        name: "... Laisek",
+        id: "10X2",
+        parent: "9J",
+        birth: "?",
+    },
+
     // jedenáctá generace
 
     {
@@ -669,7 +737,7 @@ export const treeDataRaw = [
         birth: "13.11.1966",
         place: "Kutná Hora",
         description: [
-            "Manžel: Ondřej Kazar (13.12.1966 Hradec Králové)",
+            "Manžel: Ondřej Klazar (13.12.1966 Hradec Králové)",
         ]
     },
 
@@ -728,6 +796,30 @@ export const treeDataRaw = [
         parent: "10J",
         birth: "1991",
     },
+    {
+        name: "Jan Lajsek",
+        id: "11J",
+        parent: "10J5",
+        birth: "1978",
+        place: "Kutná Hora"
+    },
+    {
+        name: "Tomáš Lajsek",
+        id: "11T",
+        parent: "10J5",
+        birth: "1981",
+        place: "Kutná Hora",
+        description:[
+            "Manželka: Hana Slováčková Lajsková (*1986 Staré Město u Uherského Hradiště)",
+        ]
+    },
+    {
+        name: "Monika Laisková",
+        id: "11M2",
+        parent: "10X2",
+        birth: "?",
+    },
+
 
     // dvanáctá generace
 
@@ -757,7 +849,7 @@ export const treeDataRaw = [
         id: "12M2",
         parent: "11L2",
         birth: "13.5.2004",
-        place: "Kolín",
+        place: "Kutná Hora",
     },
     {
         name: "Kateřina Filipová",
@@ -789,6 +881,13 @@ export const treeDataRaw = [
         parent: "11S",
         birth: "5.4.2012",
         place: "Kolín",
+    },
+    {
+        name: "Radim Lajsek",
+        id: "12R",
+        parent: "11T",
+        birth: "2021",
+        place: "Staré Město u Uherského Hradiště",
     },
 
 ];
