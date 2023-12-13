@@ -4,7 +4,7 @@
     export let id = "";
     export let name = "No name";
     export let birth = "No birth";
-    export let description = "No description";
+    export let description = "Žádné další informace";
     export let death = "";
     export let place = "";
 
@@ -13,7 +13,7 @@
     };
 
     const toSafeDescription = (desc) => {
-        const safeDesc = toSafeValue(desc, "žádné další informace");
+        const safeDesc = toSafeValue(desc, "Žádné další informace");
         return typeof safeDesc === "string" ? [safeDesc] : safeDesc;
     };
 
@@ -38,11 +38,11 @@
     <div in:fly={{ x: -50 }} class="sticky">
         <h1>{name}</h1>
         <h2>{toDateSafeFormatted({ birth, death, place})}</h2>
+        <!-- <i>dev id: {id}</i> -->
     </div>
-{/key}
-<div>
-    
-    {#each toSafeDescription(description) as paragraph}
+    {/key}
+    <div>
+        {#each toSafeDescription(description) as paragraph}
         <p>{paragraph}</p>
     {/each}
 </div>

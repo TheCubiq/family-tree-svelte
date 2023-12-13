@@ -508,6 +508,7 @@ export const treeDataRaw = [
         place: "Křesetice č. p. 109",
         description: [
             "Dne 1. 3. 1919 se oženil s Annou Eisnerovou z Uhlířských Janovic.",
+            "Řezník v Bykánci u Kutné Hory",
         ]
     },
     {
@@ -569,6 +570,7 @@ export const treeDataRaw = [
         death: "4.11.1993 (Kutná Hora)",
         place: "Mstišov",
         description: [
+            "Hostinský v Kutné Hoře",
             "Manželka Anna Řezáčová Lajsková (*22.8.1919 Petrovice u Kutné Hory - 24.4.1992)",
             "Rodiče Anny Lajskové:",
             "Josef Řezáč - Dělník v Petrovicích u Kutné Hory",
@@ -583,6 +585,7 @@ export const treeDataRaw = [
         death: "30.7.2017 (Křesetice)",
         place: "Křesetice",
         description: [
+            "Ředitelka ZŠ v Křeseticích",
             "manžel Jaroslav Štěpánek (*9.8.1931 Strašnice - 9.2.2007 Křesetice č.p. 147)",
         ]
     },
@@ -629,6 +632,9 @@ export const treeDataRaw = [
         birth: "8.6.1925",
         place: "Bykánec",
         death: "16.2.1997 (Kutná Hora)",
+        description: [
+            "Manželka: Markéta Tomíčková Lajsková (†17.11.2000 Kutná Hora)"
+        ]
 
         
     },
@@ -705,24 +711,29 @@ export const treeDataRaw = [
         parent: "9K",
         birth: "1952",
         death: "2014",
+        description: [
+            "Manželka: Věra Lajsková",
+        ],
     },
     {
         name: "Jan Lajsek",
         id: "10J5",
         parent: "9K",
         birth: "1955",
+        place: "Kutná Hora",
         description: [
-            "Manželka: Jaroslava Lajsková (*1957 Březová, Kutná Hora)",
+            "Manželka: Jaroslava Skaláková Lajsková (*1957 Březová, Kutná Hora)",
+            "S manželkou Jaroslavou žijí v Březové u Kutné Hory"
         ]
     },
     {
-        name: "... Laisek",
+        name: "? Laisek",
         id: "10X",
         parent: "9J",
         birth: "?",
     },
     {
-        name: "... Laisek",
+        name: "? Laisek",
         id: "10X2",
         parent: "9J",
         birth: "?",
@@ -814,9 +825,45 @@ export const treeDataRaw = [
         ]
     },
     {
+        name: "? Laisek",
+        id: "11X",
+        parent: "10X2",
+        birth: "?",
+    },
+    {
         name: "Monika Laisková",
         id: "11M2",
         parent: "10X2",
+        birth: "?",
+    },
+    {
+        name: "??",
+        id: "11X",
+        parent: "10J4",
+        birth: "?",
+    },
+    {
+        name: "??",
+        id: "11X2",
+        parent: "10J4",
+        birth: "?",
+    },
+    {
+        name: "? Štěpánek",
+        id: "11XS",
+        parent: "10J3",
+        birth: "?",
+    },
+    {
+        name: "? Štěpánková",
+        id: "11XS2",
+        parent: "10J3",
+        birth: "?",
+    },
+    {
+        name: "? Štěpánková",
+        id: "11XS3",
+        parent: "10J3",
         birth: "?",
     },
 
