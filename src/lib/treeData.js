@@ -599,6 +599,7 @@ export const treeDataRaw = [
         parent: "8V2",
         birth: "20.4.1922",
         place: "Křesetice",
+        death: "25.8.2012",
         description: [
             "manželka: Marie Křenková Lajsková (*13.1.1923 Křesetice)",
             "Rodiče Marie Lajskové: Karel Křenek a Antonie Čermáková Křenková",
@@ -750,14 +751,30 @@ export const treeDataRaw = [
     },
 
     {
+        name: "Vladimír Lajsek",
+        id: "10V",
+        parent: "9Z",
+        birth: "16.9.1950",
+        place: "Kutná Hora",
+        description: [
+            "Ing. Vladimír Lajsek",
+            "Manželka: Jindřiška Pospíšilová Lajsková (*26.1.1951 Kutná Hora)",
+        ],
+    },
+    {
         name: "Zbyněk Lajsek",
         id: "10Z",
         parent: "9Z",
         birth: "6.4.1953",
         place: "Kutná Hora",
+        death: "1.5.2023",
         description: [
-            "Manželka: Miluše Hatáková Lajsková",
-            "Rodiče Miluše: Josef Haták (*17.1.1918 Praha) a Blažena Holadová Hatáková (*6.3.1921 Keblov)",
+            "Soustružník",
+            "Jeho první manželka: Miluše Hatáková Lajsková (*27.5.1953 Kutná Hora - 2.12.1977 Kutná Hora)",
+            "po boji s těžkou nemocí zemřela ve věku 24 let",
+            "Rodiče Miluše: Josef Haták (*17.1.1918 Praha - 7.4.2004 Kutná Hora) a Blažena Holadová Hatáková (*8.3.1921 Keblov - 19.1.2011 Kutná Hora)",
+            "Jeho druhá manželka: Eva Zelená Lajsková (*30.11.1953 Čáslav)",
+            "Rodiče Evy: Josef Zelený a Bedřiška Opočenská Zelená",
         ],
     },
 
@@ -912,6 +929,21 @@ export const treeDataRaw = [
         birth:"?",
     },
 
+    {
+        name:"Vladimír Lajsek",
+        id:"11V2",
+        parent:"10V",
+        birth:"23.7.1974",
+        place:"Nymburk",
+    },
+    {
+        name: "Jindřiška Lajsková Nagyová",
+        id: "11J2",
+        parent: "10V",
+        birth: "22.6.1973",
+        place: "Kutná Hora",
+    },
+
 
     // dvanáctá generace
 
@@ -981,5 +1013,25 @@ export const treeDataRaw = [
         birth: "2021",
         place: "Staré Město u Uherského Hradiště",
     },
-
+    {
+        name: "Jakub Nagy",
+        id: "12J2",
+        parent: "11J2",
+        birth: "13.10.1995",
+        place: "Praha",
+    },
+    {
+        name: "Barbora Nagyová",
+        id: "12B",
+        parent: "11J2",
+        birth: "10.11.1996",
+        place: "Praha",
+    },
+    {
+        name: "Tereza Nagyová",
+        id: "12T",
+        parent: "11J2",
+        birth: "21.1.2009",
+        place: "Benešov",
+    },
 ];
