@@ -907,13 +907,27 @@ export const treeDataRaw = [
     },
 
     {
-        name:"Monika Lajsková",
+        name:"Monika Lajsková Honzová",
         id:"11M2",
         parent:"10Z",
         birth:"14.3.1976",
         place:"Kutná Hora",
+        description: [
+            "Manžel: Petr Honza (*15.9.1981 Brno)",
+        ],
     },
 
+    {
+        name:"Jitka Lajsková Vlková",
+        id:"11JV",
+        parent:"10Z",
+        birth:"27.4.1977",
+        place: "Čáslav",
+        description: [
+            "Manžel: Jan Vlk (*14.4.1977)",
+        ],
+    },
+    
     {
         name:"Zbyněk Lajsek",
         id:"11Z",
@@ -922,12 +936,6 @@ export const treeDataRaw = [
         place:"Kutná Hora",
     },
 
-    {
-        name:"? Lajsková",
-        id:"11X3",
-        parent:"10Z",
-        birth:"?",
-    },
 
     {
         name:"Vladimír Lajsek",
@@ -1033,5 +1041,29 @@ export const treeDataRaw = [
         parent: "11J2",
         birth: "21.1.2009",
         place: "Benešov",
+    },
+
+    {
+        name: "Kateřina Honzová",
+        id: "12K2",
+        parent: "11M2",
+        birth: "22.3.2017",
+        place:"Kutná Hora",
+    },
+
+    {
+        name: "Jan Vlk",
+        id: "12V2",
+        parent: "11JV",
+        birth: "22.12.1998",
+        place:"Kutná Hora",
+    },
+
+    {
+        name: "Denisa Vlková",
+        id: "12V3",
+        parent: "11JV",
+        birth: "21.3.2003",
+        place:"Kutná Hora",
     },
 ];
