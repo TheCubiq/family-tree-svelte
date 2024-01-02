@@ -907,14 +907,11 @@ export const treeDataRaw = [
     },
 
     {
-        name:"Monika Lajsková Honzová",
-        id:"11M2",
+        name:"Monika Lajsková",
+        id:"11M3",
         parent:"10Z",
         birth:"14.3.1976",
         place:"Kutná Hora",
-        description: [
-            "Manžel: Petr Honza (*15.9.1981 Brno)",
-        ],
     },
 
     {
@@ -1044,11 +1041,14 @@ export const treeDataRaw = [
     },
 
     {
-        name: "Kateřina Honzová",
+        name: "Kateřina Hozová",
         id: "12K2",
-        parent: "11M2",
+        parent: "11M3",
         birth: "22.3.2017",
-        place:"Kutná Hora",
+        place:"Kolín",
+        description: [
+            "Otec Kateřiny: Petr Hoza (*15.9.1981 Brno)",
+        ]
     },
 
     {

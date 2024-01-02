@@ -47,6 +47,7 @@
         border-top: 1px solid #ccc;
         width: 50%;
         height: var(--connectorOffset);
+        /* background-color: var(--color-bg); */
     }
 
     li::after {
@@ -72,6 +73,7 @@ right connector from last child*/
     li:first-child::before,
     li:last-child::after {
         border: 0 none;
+        /* background: transparent; */
     }
     /*Adding back the vertical connector to the last nodes*/
     li:last-child::before {
