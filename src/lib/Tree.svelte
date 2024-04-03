@@ -1,7 +1,7 @@
 
 <Cell class="treeRoot" items={treeData} let:item>
     <!-- <a href="./">{item.name}</a> -->
-    <a href="./" on:click|preventDefault={() => infoData.set(item)} >{item.name}</a>
+    <a href={"#"+item.id} on:click={() => infoData.set(item)} >{item.name}</a>
 </Cell>
 
 <script>

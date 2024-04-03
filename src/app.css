@@ -38,9 +38,6 @@ h1 {
 
 
 #app {
-  /* max-width: 1280px;
-  margin: 0 auto; */
-  /* padding: 2rem; */
   padding: 0;
   margin: 0;
   text-align: center;
@@ -54,7 +51,9 @@ a {
 }
 
 li > a:hover,
-li > a:hover ~ ul li a {
+li > a:focus,
+li > a:hover ~ ul li a,
+li > a:focus ~ ul li a {
   background-color: rgba(51, 51, 51, 0.7);
   /* opacity: 1; */
   filter: brightness(1.2);

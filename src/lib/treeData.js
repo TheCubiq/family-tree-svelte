@@ -1013,9 +1013,16 @@ export const treeDataRaw = [
     },
     {
         name: "Radim Lajsek",
-        id: "12R",
+        id: "12R2",
         parent: "11T",
         birth: "2021",
+        place: "Staré Město u Uherského Hradiště",
+    },
+    {
+        name: "David Lajsek",
+        id: "12R",
+        parent: "11T",
+        birth: "2024",
         place: "Staré Město u Uherského Hradiště",
     },
     {
